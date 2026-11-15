@@ -1,0 +1,5 @@
+# dsh-cetwt：左侧固定写译训练侧边栏
+# 装载宿主半区（/cetwt 静态资源 + 批改 API）与客户端半区（shell.overlay 停靠面板）
+- insert:
+    - id: dsh-cetwt
+      name: dsh-cetwt

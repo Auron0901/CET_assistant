@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>四六级写译训练</title>
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+  <div id="root">
+    <div class="topbar">
+      <div class="brand">
+        <span class="dot"></span>
+        <span>四六级写译训练</span>
+        <span class="spacer"></span>
+        <span class="zoom" id="zoom-ctl" title="页面缩放（Ctrl + 滚轮）">
+          <button class="ghost zbtn" data-zoom="out" title="缩小">−</button>
+          <button class="ghost zbtn zval" id="zoom-val" data-zoom="reset" title="恢复 100%">100%</button>
+          <button class="ghost zbtn" data-zoom="in" title="放大">＋</button>
+        </span>
+        <button class="ghost" id="btn-float" title="切换为可移动浮窗">浮窗</button>
+        <button class="ghost" id="btn-min" title="收起面板，回到对话">收起</button>
+      </div>
+      <div class="seg" id="seg-mode">
+        <button data-mode="translation">翻译</button>
+        <button data-mode="writing-text">作文·文本</button>
+        <button data-mode="writing-image">作文·手写</button>
+      </div>
+      <div class="tabs" id="tabs">
+        <button class="tab on" data-view="practice">练习</button>
+        <button class="tab" data-view="records">练习记录</button>
+    <button class="tab" data-view="vocab">高级词汇</button>
+      </div>
+      <div class="pickers">
+        <select id="sel-level"><option value="CET4">CET4 四级</option><option value="CET6">CET6 六级</option></select>
+        <select id="sel-exam"></select>
+      </div>
+    </div>
+
+    <div class="scroll" id="scroll"></div>
+
+    <div class="actionbar" id="actionbar"></div>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
